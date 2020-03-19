@@ -1,13 +1,15 @@
 import React from 'react';
+import Auth from './use-auth';
 
 const Login = () => {
+    const auth = Auth();
+    //console.log(auth.signInWithGoogle);
     return (
         <div>
             <h1>This is login area</h1>
-            <form action="">
-                <input type="email" name="email" id="" placeholder="Enter your email here" />
-                <input type="password" name="password" id="" placeholder="Enter your password here" />
-                <button type="submit">LOGIN</button>
+            
+             <form action="">
+               <button type="submit" onClick={auth.signInWithGoogle}>Signin With Google</button>
             </form>
 
         </div>
