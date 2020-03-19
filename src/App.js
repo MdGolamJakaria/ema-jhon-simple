@@ -12,7 +12,7 @@ import Review from './Components/Review/Review';
 import Inventory from './Components/Inventory/Inventory';
 import Notfound from './Components/NotFound/Notfound';
 import Productdetails from './Components/Productdetails/Productdetails';
-import logIn from './Components/logIn/logIn';
+import Login from './Components/Login/Login'
 
 
 function App() {
@@ -39,7 +39,7 @@ function App() {
             <Productdetails></Productdetails>
           </Route>
           <Route path="/login">
-            <logIn></logIn>
+            <Login></Login>
           </Route>
           <Route path="*">
             <Notfound></Notfound>
