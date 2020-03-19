@@ -12,6 +12,7 @@ import Review from './Components/Review/Review';
 import Inventory from './Components/Inventory/Inventory';
 import Notfound from './Components/NotFound/Notfound';
 import Productdetails from './Components/Productdetails/Productdetails';
+import logIn from './Components/logIn/logIn';
 
 
 function App() {
@@ -36,6 +37,9 @@ function App() {
           </Route>
           <Route path="/products/:productKey">
             <Productdetails></Productdetails>
+          </Route>
+          <Route path="/login">
+            <logIn></logIn>
           </Route>
           <Route path="*">
             <Notfound></Notfound>
