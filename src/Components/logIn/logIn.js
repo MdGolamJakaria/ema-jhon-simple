@@ -8,9 +8,9 @@ const Login = () => {
         <div>
             <h1>This is login area</h1>
             
-             <form action="">
+             
                <button type="submit" onClick={auth.signInWithGoogle}>Signin With Google</button>
-            </form>
+            
 
         </div>
     );
